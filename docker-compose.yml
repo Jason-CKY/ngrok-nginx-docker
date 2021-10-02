@@ -10,6 +10,7 @@ services:
   ngrok:
     container_name: ngrok
     image: wernight/ngrok:latest
+    # image: wernight/ngrok:armhf # ARM version of the image, use this if running in raspi
     command: ngrok http nginx:80
     networks:
       - nginx
